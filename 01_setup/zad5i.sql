@@ -1,4 +1,4 @@
-SELECT imie, nazwisko FROM ksiegowosc.pracownicy p
+SELECT imie, nazwisko, pe.kwota FROM ksiegowosc.pracownicy p 
 JOIN ksiegowosc.wynagrodzenie w ON p.id_pracownika = w.id_pracownika
 JOIN ksiegowosc.pensja pe ON w.id_pensji = pe.id_pensji
-WHERE kwota BETWEEN 1500 AND 3000;
+ORDER BY kwota ASC;
