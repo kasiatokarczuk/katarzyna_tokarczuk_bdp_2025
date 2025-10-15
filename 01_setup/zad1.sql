@@ -1,1 +1,1 @@
-zmiana próbna
+CREATE DATABASE firma;
